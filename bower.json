@@ -1,0 +1,6 @@
+{
+  "name": "bits-css-button",
+  "version": "0.1.0",
+  "author": "Lukáš Mladý",
+  "main": "_Button.scss"
+}
