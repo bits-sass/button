@@ -3,10 +3,21 @@
    ========================================================================== */
 
 /**
+ * Variables
+ *
+ * It is recommended to override these.
+ *
+ * 1. Component namespace.
+ */
+
+$bits-components-ns: 'bits-' !default; /* 1 */
+
+/**
  * The button classes are best applied to links, buttons, and submit inputs.
  * These components can be used in forms, as calls to action, or as part of the
  * general UI of the site/app.
  *
+ * ----------------
  * Recommended use:
  *
  * <a class="Button [Button--modifier]" role="button" href="[url]">Button text</a>
@@ -29,12 +40,12 @@
  * 7. Prevent wrapping across multiple lines.
  */
 
-.Button {
+.#{$bits-components-ns}Button {
   -webkit-appearance: none; /* 1 */
   background: transparent;
   border: 1px solid;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; /* 2 */
+       box-sizing: border-box; /* 2 */
   color: inherit; /* 3 */
   cursor: pointer;
   display: inline-block;
@@ -57,22 +68,26 @@
  * UI states
  */
 
-.Button:hover,
-.Button:focus,
-.Button:active {
-  text-decoration: none;
+.#{$bits-components-ns}Button {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
 }
 
-.Button:disabled,
-.Button.is-disabled {
-  cursor: default;
+.#{$bits-components-ns}Button {
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+  }
 }
 
 /**
  * Remove excess padding and border in Firefox 4+
  */
 
-.Button::-moz-focus-inner {
+.#{$bits-components-ns}Button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -83,7 +98,7 @@
  * Modifier: full-width buttons
  */
 
-.Button--full {
+.#{$bits-components-ns}Button--full {
   display: block;
   width: 100%;
 }
