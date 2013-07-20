@@ -1,14 +1,14 @@
-# Bits.scss button
+# Bits.sass button
 
 Button component.
 
-Read more about [Bits.scss toolkit](https://github.com/bits-scss/bits.scss).
+Read more about [Bits.sass toolkit](https://github.com/bits-sass/bits.sass).
 
 ## Installation
 
-* __Bower:__ `bower install --save bits-scss-button`
-* __Download:__ [zip](https://github.com/bits-scss/button/zipball/master), [tar.gz](https://github.com/bits-scss/button/tarball/master)
-* __Git:__ `git clone https://github.com/bits-scss/button.git`
+* __Bower:__ `bower install --save bits-sass-button`
+* __Download:__ [zip](https://github.com/bits-sass/button/zipball/master), [tar.gz](https://github.com/bits-sass/button/tarball/master)
+* __Git:__ `git clone https://github.com/bits-sass/button.git`
 
 ## Available SASS variables
 
@@ -26,7 +26,7 @@ JavaScript event handlers from firing.
 
 ## Usage
 
-Like many Bits.scss components, `bits-scss-button` relies on a base component class that is
+Like many Bits.sass components, `bits-sass-button` relies on a base component class that is
 extended by any number of additional modifier classes.
 
 ```html
@@ -56,7 +56,7 @@ N.B. You should try to avoid styling the core `Button` class directly.
 
 ## Theming
 
-The `bits-scss-button` component is almost entirely structural. You can rely on a
+The `bits-sass-button` component is almost entirely structural. You can rely on a
 theme or build your application-specific theme styles in your application-level
 stylesheets. For example:
 
