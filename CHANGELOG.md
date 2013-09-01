@@ -1,5 +1,7 @@
 === HEAD
 
+* Reorder properties
+
 === 0.2.1 (July 20, 2013)
 
 * Rename organization's name to 'Bits.sass'

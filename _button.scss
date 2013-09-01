@@ -30,38 +30,41 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  *
  * Build on this component using rulesets in your application-level CSS.
  *
- * 1. Corrects inability to style clickable `input` types in iOS
- * 2. Normalize `box-sizing` across all elements that this component could be
+ * 1. Prevent button text from being selectable.
+ * 2. Corrects inability to style clickable `input` types in iOS
+ * 3. Normalize `box-sizing` across all elements that this component could be
  *    applied to.
- * 3. Inherit text color from ancestor.
- * 4. Inherit font styles from ancestor.
- * 5. Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+.
- * 6. Prevent button text from being selectable.
+ * 4. Inherit text color from ancestor.
+ * 5. Inherit font styles from ancestor.
+ * 6. Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+.
  * 7. Prevent wrapping across multiple lines.
  */
 
 .#{$bits-components-ns}Button {
-  -webkit-appearance: none; /* 1 */
-  background: transparent;
-  border: 1px solid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; /* 1 */
+  -webkit-appearance: none; /* 2 */
+
   -moz-box-sizing: border-box;
-       box-sizing: border-box; /* 2 */
-  color: inherit; /* 3 */
-  cursor: pointer;
+       box-sizing: border-box; /* 3 */
   display: inline-block;
-  font: inherit; /* 4 */
-  line-height: normal; /* 5 */
+  position: relative;
   margin: 0;
   padding: 0.4em 0.75em;
-  position: relative;
+  vertical-align: middle;
+
+  color: inherit; /* 4 */
+  cursor: pointer;
+  font: inherit; /* 5 */
+  line-height: normal; /* 6 */
   text-align: center;
   text-decoration: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none; /* 6 */
-  vertical-align: middle;
   white-space: nowrap; /* 7 */
+
+  border: 1px solid;
+  background: transparent;
 }
 
 /**
@@ -88,8 +91,8 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  */
 
 .#{$bits-components-ns}Button::-moz-focus-inner {
-  border: 0;
   padding: 0;
+  border: 0;
 }
 
 /* -------------------------------------------------------------------------- */
