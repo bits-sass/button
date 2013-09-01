@@ -1,6 +1,7 @@
 === HEAD
 
 * Reorder properties
+* Fix style
 
 === 0.2.1 (July 20, 2013)
 
