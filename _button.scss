@@ -3,18 +3,6 @@
    ========================================================================== */
 
 /**
- * Variables
- *
- * It is recommended to override these.
- *
- * 1. Component namespace.
- */
-
-$bits-components-ns: 'bits-' !default; /* 1 */
-
-/* -------------------------------------------------------------------------- */
-
-/**
  * The button classes are best applied to links, buttons, and submit inputs.
  * These components can be used in forms, as calls to action, or as part of the
  * general UI of the site/app.
@@ -26,6 +14,18 @@ $bits-components-ns: 'bits-' !default; /* 1 */
  * <button class="Button [Button--modifier]" type="submit">Button text</button>
  * <input class="Button [Button--modifier]" type="submit" value="Button text">
  */
+
+/* Variables
+   ========================================================================== */
+
+/**
+ * Bits.sass components namespace
+ */
+
+$bits-components-ns: 'bits-' !default; /* 1 */
+
+/* Component
+   ========================================================================== */
 
 /**
  * Button template
@@ -69,9 +69,7 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   background: transparent;
 }
 
-/**
- * UI states
- */
+/* UI states */
 
 .#{$bits-components-ns}Button {
   &:hover,
@@ -97,10 +95,11 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   border: 0;
 }
 
-/* -------------------------------------------------------------------------- */
+/* Component modifiers
+   ========================================================================== */
 
 /**
- * Modifier: full-width buttons
+ * Full-width buttons
  */
 
 .#{$bits-components-ns}Button--full {
