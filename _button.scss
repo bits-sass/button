@@ -78,11 +78,16 @@ $bits-components-ns: 'bits-' !default; /* 1 */
   }
 }
 
-.#{$bits-components-ns}Button {
-  &:disabled,
-  &.is-disabled {
-    cursor: default;
-  }
+/**
+ * These two rules need to be separated due to IE 8 bug
+ */
+
+.#{$bits-components-ns}Button:disabled {
+  cursor: default;
+}
+
+.#{$bits-components-ns}Button.is-disabled {
+  cursor: default;
 }
 
 /**

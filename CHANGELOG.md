@@ -1,5 +1,7 @@
 === HEAD
 
+* Fix IE 8 :disabled bug
+
 === 0.2.2 (September 2, 2013)
 
 * Reorder properties
