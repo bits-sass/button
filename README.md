@@ -76,7 +76,7 @@ stylesheets. For example:
   background-color: #eee;
 }
 
-.Button--default:hover {
+.Button--default {
   &:hover,
   &:focus,
   &:active,
@@ -96,7 +96,7 @@ stylesheets. For example:
 .Button--default {
   &:active,
   &.is-pressed {
-    box-shadow: inset 0 1px 2px rgba(0,0,0, 0.2);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     background-color: #ccc;
   }
 }
