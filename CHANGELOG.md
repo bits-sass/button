@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.2.3 (September 5, 2013)
+
 * Fix IE 8 :disabled bug
 
 === 0.2.2 (September 2, 2013)
